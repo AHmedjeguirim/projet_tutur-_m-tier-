@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Clients</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylef.css?v=3"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Votre Logo</div>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="freelances.html">Freelances</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Liste des Clients</h1>
+                <p>Découvrez les entreprises et particuliers à la recherche de freelances.</p>
+            </div>
+        </section>
+    
+        <section id="liste-clients">
+            <h2>Nos Clients</h2>
+            <table id="client-table">
+                <div id="pagination" class="pagination"></div>
+        
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Description</th>
+                        <th>Détail</th> 
+                    </tr>
+                </thead>
+                <tbody id="client-body">
+                    <!-- Les clients seront chargés ici via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+    
+    <script src="script_clients.js"></script>
+</body>
+</html>
